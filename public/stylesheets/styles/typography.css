@@ -1,0 +1,85 @@
+*************************************************************
+***     ___           ____   _  __   _  __   ____   _  __ ***
+***    / _ )  __ __  / __/  / |/ /  / |/ /  / __/  / |/ / ***
+***   / _  | / // / / _/   /    /  /    /  / _/   /    /  ***
+***  /____/  \_, / /___/  /_/|_/  /_/|_/  /___/  /_/|_/   ***
+***         /___/                                         ***
+*************************************************************
+*****ByENNEN, LLC. Lance Ennen: byennen@gmail.com************
+*************************************************************
+/* =BODY ELEMENTS **************************************************/
+
+body {
+  	font-family: Helvetica, Arial, Verdana, sans-serif;
+  	line-height: 1.6; /* Unitless for proper inheritance */
+	color: #707580;
+}
+   
+body          { font-size: 81.25%; }   /* IE (10px = 62.5%, 11px = 68.75%, 12px = 75%, and so forth) */
+html > body   { font-size: 13px; }  /* All other browsers */
+
+/* =HEADINGS *******************************************************/
+
+h1, h2, h3, h4, h5, h6 { 
+  	font-family: Helvetica, Arial, Verdana, "Lucida Grande", sans-serif;
+	margin: 0 0 5px 0;
+	padding: 0;
+	line-height: 1;
+}
+
+h1 { font-size: 2.25em; }
+h2 { font-size: 2.0em; }
+h3 { font-size: 1.75em; }
+h4 { font-size: 1.5em; }
+h5 { font-size: 1.25em; }
+h6 { font-size: 1.0em; }
+
+/* 
+Uncommenting this will cause all <span> tags within <h?> tags to disappear 
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { display: none; } 
+*/
+
+/* =TEXT ELEMENTS **************************************************/
+
+p           	{ margin: 15px 0 0px 5px; color: #000; }
+p.last      	{ margin-bottom: 15px; }
+
+ul, ol      	{ margin: 0 0 15px 0; }
+ul 				{ list-style-type: disc; margin-left: 15px; }
+ol          	{ list-style-type: decimal; margin-left: 18px; }
+
+a 				{ text-decoration: underline; outline: none; color: #707580; }
+a:active 		{ outline: none; }
+a:hover     	{ text-decoration: none; }
+
+img				{ margin: 0 0 15px 0; padding: 0; border: none; }
+img.left		{ float: left; margin-right: 15px; }
+img.right		{ float: right; margin-left: 15px; }
+
+blockquote {
+	margin: 0 0 15px 0;
+	padding: 10px;
+	font: italic 13px Georgia, Helvetica, Arial, sans-serif;
+	background-color: #F1F1F1;
+}
+blockquote p {
+	margin-bottom: 0;
+}
+
+strong      	{ font-weight: bold; color: #383b40; }
+em          	{ font-style: italic; }
+abbr			{ border-bottom: 1px dotted #999; cursor: help; }
+
+pre         	{ margin-bottom: 15px; background: #eee; border: 1px solid #ddd; padding: 10px; }
+code        	{ font: 0.9em Monaco, monospace; }
+
+/* =TABLES *********************************************************/
+
+table   		{ margin-bottom: 15px; border-top: 1px solid #ddd; border-left: 1px solid #ddd; }
+th, td  		{ height: 1em; padding: 2px 4px; border-bottom: 1px solid #ddd; border-right: 1px solid #ddd; }
+th      		{ font-weight: bold; }
+
+/* =FORMS **********************************************************/
+
+label     		{ font-weight: bold; }
+textarea  		{ font-family: Helvetica, Arial, sans-serif; font-size: 12px; }

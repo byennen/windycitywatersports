@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>Windy City Watersports - <%= @title %></title>
+		<meta name="description" content="Windy City Watersports is the premier Chicago waterfront attraction on the beaches of Lake Michigan. Waverunners, beach chairs, beach umbrellas, and beach towels, are all available for public entertainment, activities, and events.">
+		<meta name="keywords" content="waverunner, chicago, beach, summer, Montrose, jet ski, vacation, boat, lake michigan, chicago attractions, chicago waterfront, chicago beaches, waverunner rentals, jet ski rentals, chicago park district, chicago tourism, chicago lake, downtown chicago, on the beach, beach activities, chicago events, chicago vacation, chicago resort">
+		<!-- jrails -->
+		<script src="/javascripts/jquery.js" type="text/javascript"></script>
+		<script src="/javascripts/jquery-ui.js" type="text/javascript"></script>
+		<script src="/javascripts/jrails.js" type="text/javascript"></script>
+		
+		<%= javascript_include_tag 'innerfade', 'greybox', 'round', 'hoverIntent', 'dropdown' %>
+		<!-- jrails -->
+		
+		<%= stylesheet_link_tag 'all', :cache => true %>
+		
+		<!--[if IE 7]>
+		  <%= stylesheet_link_tag 'ie' %>
+		<![endif]-->
+
+		<!--[if IE 6]>
+			<%= stylesheet_link_tag 'ie6' %>
+		<![endif]-->
+		
+		<script type="text/javascript">
+			   $(document).ready(
+						function(){
+							$('#news').innerfade({
+								animationtype: 'slide',
+								speed: 750,
+								timeout: 2000,
+								type: 'random',
+								containerheight: 'auto'
+							});
+
+							$('ul#portfolio').innerfade({
+								speed: 1000,
+								timeout: 7000,
+								type: 'sequence',
+								containerheight: '220px'
+							});
+
+					});
+					
+					var GB_ANIMATION = true;
+				      $(document).ready(function(){
+				        $("a.greybox").click(function(){
+				          var t = this.title || $(this).text() || this.href;
+				          GB_show(t,this.href,470,600);
+				          return false;
+				        });
+				      });
+				
+		</script>
+		<!-- <img style="top: 0px; z-index:1;position: relative;" id="sun" src="/images/background/sun.gif"> -->
+		<!-- <img style="position: fixed; z-index: 20; top: 48px; right: 235px;" id="cloud" src="Vimeo,%20Video%20Sharing%20For%20You_files/cloud.gif">
+		<img style="top: 250px;" id="plane" src="Vimeo,%20Video%20Sharing%20For%20You_files/plane.gif">
+		<img style="top: 325px;" id="cloud2" src="Vimeo,%20Video%20Sharing%20For%20You_files/cloud2.gif">
+		<img style="top: 525px;" id="balloon" src="Vimeo,%20Video%20Sharing%20For%20You_files/balloon.gif">
+		<div style="display: none;" id="avatar_hover"></div>
+		<div style="display: none;"> -->
+
+</head>
+	<body>
+		<div id="wrap">
+		
+		<!-- head -->
+		<%= render :partial => 'shared/head' %>
+		<!-- end of head -->
+		
+		<!-- middle content -->
+		<%= render :partial => 'shared/middle' %>
+		<!-- end of middle content -->
+				
+		</div>
+		
+		<!-- footer -->
+		<%= render :partial => 'shared/footer' %>
+		<!-- end of footer -->
+		
+		<script type="text/javascript">
+		Rounded('rounded', 6, 6);
+		</script>
+		<!-- <script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ?
+		"https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost +
+		"google-analytics.com/ga.js'
+		type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		try {
+		var pageTracker = _gat._getTracker("UA-8423355-3");
+		pageTracker._trackPageview();
+		} catch(err) {}</script> -->
+	</body>
+</html>

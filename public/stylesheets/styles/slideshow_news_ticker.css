@@ -1,0 +1,25 @@
+ul {
+	margin-bottom: 2em;
+	list-style-type: none;
+}
+
+
+/* Listen */
+#news {
+	width:500px;
+	margin:0 auto;
+}
+
+ul#news a{
+	color:#FFF;
+	font-size:17px;
+	text-decoration: none;
+}
+
+ul#news a:hover{
+	color:#34619E;
+}
+
+ul#portfolio li img{
+/*	border:2px solid #CCC;*/
+}

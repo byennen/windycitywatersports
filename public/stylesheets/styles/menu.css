@@ -1,0 +1,76 @@
+/* =NAVIGATION *****************************************************/
+/*#nav {
+	float:left;
+	margin:0 auto;
+	width:530px;
+}
+
+ul#nav {
+	float: left;
+	margin: 0 0 20px 0px;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul#nav li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+ul#nav li a {
+	float: left;
+	margin: 0 0 0 30px;
+	padding: 0;
+	font-size: 20px;
+	font-weight: bold;
+	color: #34619E;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-shadow: #fff 0 1px 0;
+}
+
+ul#nav li a.active,
+ul#nav li a:hover { color: #c1bfc8; }*/
+
+/* =END OF OLD NAVIGATION **********************************************/
+
+#nav {
+
+}
+
+#nav p {
+	padding:5px 0 14px 0;
+	color:#FFF;	
+}
+
+/* 
+	LEVEL ONE
+*/
+ul.dropdown                         { position: relative;text-transform: uppercase;}
+ul.dropdown li                      { font-weight: bold; float: left; zoom: 1; padding:0 20px; font-size: 17px;}
+ul.dropdown a:hover		            { color: #FFF; }
+ul.dropdown a:active                { color: #FFF; }
+ul.dropdown li a                    { display: block; padding: 10px 0px; /*border-right: 1px solid #333;*/
+									color: #FFF; text-decoration: none; text-shadow: #fff 0 1px 0;}
+ul.dropdown li:last-child a         { border-right: none; } /* Doesn't work in IE */
+ul.dropdown li.hover,
+ul.dropdown li:hover                { background:url(/images/main/menu_background.png) repeat; color: #FFF; position: relative; }
+ul.dropdown li.hover a              { color: #FFF; }
+
+
+/* 
+	LEVEL TWO
+*/
+ul.dropdown ul 						{ width: 330px; visibility: hidden; position: absolute; top: 100%; left: -55px; }
+ul.dropdown ul li 					{ font-weight: normal; background:url(/images/main/menu_background.png) repeat; color: #FFF; 
+									  float: none; }
+									  
+                                    /* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul li a					{ border-right: none; width: 100%; display: inline-block; } 
+
+/* 
+	LEVEL THREE
+*/
+ul.dropdown ul ul 					{ left: 100%; top: 0; }
+ul.dropdown li:hover > ul 			{ visibility: visible; }

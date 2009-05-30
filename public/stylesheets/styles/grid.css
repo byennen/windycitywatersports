@@ -1,0 +1,128 @@
+/* =BASIC ELEMENTS *************************************************/
+
+body {
+	background: #97EDFB url(/images/main/background.png) repeat-x top left;
+	margin:0;
+	padding:0;
+}
+
+/* =WRAP ***********************************************************/
+
+div#wrap {
+	margin: 0 auto;
+	width: 1023px;
+	position: relative;
+	z-index: 2;
+	
+}
+
+/* =HEADER *********************************************************/
+
+div#header {
+	margin: 0 0 20px 0;
+	padding: 0 25px;
+	width: 936px;
+	height: 88px;
+}
+
+/* =NAVIGATION *****************************************************/
+
+ul#nav { margin-bottom: 0; }
+
+/* =PRIMARY ********************************************************/
+
+div#primary {
+	position: relative;
+	margin: 0 0 20px 0;
+	padding: 0;
+	width: 986px;
+	height: 535px;
+}
+
+div#primary img { margin: 0; padding: 0; }
+
+/* =SECONDARY ******************************************************/
+
+div#secondary {
+	position: relative;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+/* =SECONDARY - WHITE BOX ******************************************/
+
+div#secondary.whitebox {
+	background: url(http://tapulous.com/wp-content/themes/tapulous/images/bg_secondary_bottomwhitebox.gif) no-repeat bottom left;
+}
+
+/* =PAGE LAYOUT ****************************************************/
+
+div#pagecontent {
+	margin: 0 0 20px 0;
+	padding: 18px;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: 0px 0px 8px #bbb;
+	-moz-box-shadow: 0px 0px 8px #bbb;
+	background-color: white;
+}
+
+div#pagecontent div.pagewrap.default {
+	position: relative; /* Added on Tuesday for About page positioning */
+	float: left;
+	margin: 0;
+	padding: 20px 20px 0 20px;
+	width: 946px;
+}
+
+div#pagecontent div.pagewrap.blog {
+	position: relative; /* Added on Tuesday for About page positioning */
+	float: left;
+	margin: 0;
+	padding-top: 20px;
+	width: 946px;
+}
+
+div#pagecontent div.pagewrap.interior {
+	position: relative; /* Added on Tuesday for About page positioning */
+	float: left;
+	margin: 0;
+
+	width: 946px;
+
+}
+
+div#pagefooter {
+	clear: both;
+	display: block;
+	width: 986px;
+	height: 20px;
+
+}
+
+/* =FOOTER *********************************************************/
+
+div#footer {
+	background:url('/images/main/footer_background.png') top left;
+	clear: both;
+	width: 1023px;
+	height:206px;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+div#footer p { 
+	margin: 0;
+	padding: 0;
+	color: #808080;
+/*	text-transform: uppercase;*/
+	font-size: 13px;
+	text-shadow: #fff 0 1px 0;
+}
+
+div#footer p a {
+	color: #808080;
+/*	text-transform: uppercase;*/
+	text-decoration:none;
+	text-shadow: #fff 0 1px 0;
+}

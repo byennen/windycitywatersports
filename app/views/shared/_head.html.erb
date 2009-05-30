@@ -1,0 +1,13 @@
+<div id="header" style="margin:10px 0;">
+	<h1 id="home">
+		<%= link_to_remote image_tag("/images/main/logo.png"), :url => {:controller => :pages, :action => :welcome },
+		:update => :main_content, :failure => "alert('HTTP Error ' + request.status + '!')"  -%>
+	</h1>
+	
+	<div style="float:right;margin:20px 30px 0 0;">
+		
+		<%= render :partial => 'shared/weather' %>
+	
+	</div>
+
+</div>

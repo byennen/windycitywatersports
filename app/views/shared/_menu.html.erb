@@ -1,0 +1,147 @@
+<div id="info_bar" style="width:100%;margin:10px 0;height:30px;position:absolute;top:255px;left:130px;z-index:100;">	
+	<div id="nav">
+		<!-- <ul id="nav">
+			<li id="about"><%#= link_to_remote "About", :url => {:controller => :pages, :action => :about },
+			:update => :main_content, :failure => "alert('HTTP Error ' + request.status + '!')"  -%></li>
+			<li id="prices"><%#= link_to_remote "Prices", :url => {:controller => :pages, :action => :prices },
+			:update => :main_content, :failure => "alert('HTTP Error ' + request.status + '!')"  -%></li>
+			<li id="reservations"><%#= link_to_remote "Reservations", :url => {:controller => :pages, :action => :reservations },
+			:update => :main_content, :failure => "alert('HTTP Error ' + request.status + '!')"  -%></li>
+			<li id="contact"><%#= link_to_remote "Contact", :url => {:controller => :pages, :action => :contact },
+			:update => :main_content, :failure => "alert('HTTP Error ' + request.status + '!')"  -%></li>
+		</ul> -->
+		
+		<ul class="dropdown">
+        	<li><p>About</p>
+        		<ul class="sub_menu">
+        			
+ 					<li id="js_items_to_bring"><%= link_to_remote "Items to bring", :url => {:controller => :pages, :action => :items_to_bring },
+					:update => :main_content, :failure => "alert('HTTP Error ' + request.status + '!')"  -%></li>
+					
+        			 <li id="js_rules_and_regulations"><%= link_to_remote "Rules and Regulations", :url => {:controller => :pages, :action => :rules_and_regulations },
+					:update => :main_content, :failure => "alert('HTTP Error ' + request.status + '!')"  -%></li>
+
+        			 <li id="js_locations"><%= link_to_remote "Locations", :url => {:controller => :pages, :action => :locations },
+					:update => :main_content, :failure => "alert('HTTP Error ' + request.status + '!')"  -%></li>
+        		</ul>
+        	</li>
+        	<li><p>Pricing</p>
+        		<ul class="sub_menu">
+        			<li id="js_weekdays"><%= link_to_remote "Weekdays", :url => {:controller => :pages, :action => :weekdays },
+					:update => :main_content, :failure => "alert('HTTP Error ' + request.status + '!')"  -%></li>
+					
+        			<li id="js_weekends"><%= link_to_remote "Weekends", :url => {:controller => :pages, :action => :weekends },
+					:update => :main_content, :failure => "alert('HTTP Error ' + request.status + '!')"  -%></li>
+					
+					<li id="js_holidays"><%= link_to_remote "Holidays", :url => {:controller => :pages, :action => :holidays },
+					:update => :main_content, :failure => "alert('HTTP Error ' + request.status + '!')"  -%></li>
+        		</ul>
+        	</li>
+        	<li><p>Reservations</p>
+        		<ul class="sub_menu">
+	
+					<li id="js_online"><%= link_to_remote "Online", :url => {:controller => :pages, :action => :online },
+					:update => :main_content, :failure => "alert('HTTP Error ' + request.status + '!')"  -%></li>
+					
+					<li id="js_phone"><%= link_to_remote "Phone", :url => {:controller => :pages, :action => :phone },
+					:update => :main_content, :failure => "alert('HTTP Error ' + request.status + '!')"  -%></li>
+        		</ul>
+        	</li>
+        	<li><p>Safety</p>
+        		<ul class="sub_menu">
+					<li><a href="/pdf/PWC_Checklist.pdf" target="_blank">PWC Checklist</a></li>
+					
+        			 <li><a href="http://www.boat-ed.com/il/index.htm" target="_blank">Illinois Boater Safety Course</a></li>
+
+        			 <li><a href="http://www.uscg.mil/0" target="_blank">United States coast Guard</a></li>
+
+        			 <li><a href="https://portal.chicagopolice.org/portal/page/portal/ClearPath/About%20CPD/Specialized%20Units/Marine%20and%20Helecopter%20Unit" target="_blank">Chicago Police Marine Unit</a></li>
+        		</ul>
+        	</li>
+        	<li><p>Contact</p>
+        		<ul class="sub_menu">
+					<li id="js_locations"><%= link_to_remote "Locations", :url => {:controller => :pages, :action => :locations },
+					:update => :main_content, :failure => "alert('HTTP Error ' + request.status + '!')"  -%></li>
+					
+					<!-- <li id="js_phone"><%#= link_to_remote "Phone or Email", :url => {:controller => :pages, :action => :phone },
+										:update => :main_content, :failure => "alert('HTTP Error ' + request.status + '!')"  -%></li> -->
+        		</ul>
+        	</li>
+        </ul>
+	
+	</div>
+
+</div>
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		$('#home').click(function(){
+			$('#main_content').fadeOut("fast");
+			$('#main_content').fadeIn("slow");	
+		});
+		
+		$('#js_items_to_bring').click(function(){
+			$('#main_content').fadeOut("fast");
+			$('#main_content').fadeIn("slow");	
+		});
+		
+		$('#js_rules_and_regulations').click(function(){
+			$('#main_content').fadeOut("fast");
+			$('#main_content').fadeIn("slow");	
+		});
+		
+		$('#js_locations').click(function(){
+			$('#main_content').fadeOut("fast");
+			$('#main_content').fadeIn("slow");	
+		});
+		
+		$('#js_weekdays').click(function(){
+			$('#main_content').fadeOut("fast");
+			$('#main_content').fadeIn("slow");	
+		});
+		
+		$('#js_weekends').click(function(){
+			$('#main_content').fadeOut("fast");
+			$('#main_content').fadeIn("slow");	
+		});
+		
+		$('#js_holidays').click(function(){
+			$('#main_content').fadeOut("fast");
+			$('#main_content').fadeIn("slow");	
+		});
+		
+		$('#js_online').click(function(){
+			$('#main_content').fadeOut("fast");
+			$('#main_content').fadeIn("slow");	
+		});
+		
+		$('#js_phone').click(function(){
+			$('#main_content').fadeOut("fast");
+			$('#main_content').fadeIn("slow");	
+		});
+		
+		$('#js_pwc_checklist').click(function(){
+			$('#main_content').fadeOut("fast");
+			$('#main_content').fadeIn("slow");	
+		});
+		
+		$('#prices').click(function(){
+			$('#main_content').fadeOut("fast");
+			$('#main_content').fadeIn("slow");
+		});
+		
+		$('#reservations').click(function(){
+			$('#main_content').fadeOut("fast");
+			$('#main_content').fadeIn("slow");
+		});
+		
+		$('#contact').click(function(){
+			$('#main_content').fadeOut("fast");
+			$('#main_content').fadeIn("slow");
+		});
+	});
+	
+</script>
+
+
