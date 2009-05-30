@@ -14,7 +14,9 @@
 		<ul class="dropdown">
         	<li><p>About</p>
         		<ul class="sub_menu">
-        			
+        			<li id="js_waverunner_fleet"><%= link_to_remote "Waverunner Fleet", :url => {:controller => :pages, :action => :waverunner_fleet },
+					:update => :main_content, :failure => "alert('HTTP Error ' + request.status + '!')"  -%></li>
+
  					<li id="js_items_to_bring"><%= link_to_remote "Items to bring", :url => {:controller => :pages, :action => :items_to_bring },
 					:update => :main_content, :failure => "alert('HTTP Error ' + request.status + '!')"  -%></li>
 					
@@ -77,6 +79,11 @@
 	
 	$(document).ready(function(){
 		$('#home').click(function(){
+			$('#main_content').fadeOut("fast");
+			$('#main_content').fadeIn("slow");	
+		});
+		
+		$('#js_waverunner_fleet').click(function(){
 			$('#main_content').fadeOut("fast");
 			$('#main_content').fadeIn("slow");	
 		});

@@ -6,8 +6,20 @@ class PagesController < ApplicationController
     
     render :partial => 'home'
   end
+  
+  def about
+    @title = "About Us"
+    
+    render :partial => 'about'
+  end
       
 #dropdowns for about 
+
+      def waverunner_fleet
+        @title = "Waverunner Fleet"
+  
+        render :partial => 'waverunner_fleet'
+      end
       
       def items_to_bring
         @title = "Items to Bring"
